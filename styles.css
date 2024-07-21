@@ -1,0 +1,96 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
+/*It's easier to set everything you use the most from the start*/
+:root {
+    --primary: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 20%);
+    --gray-black: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --font-p: 14px;
+}
+img {
+    width: 33%;
+    height: 33%;
+    border-radius: 50%;
+    margin-block-end: 1.7rem;
+}
+/*Body outside the card/frame*/
+body {
+    background-color: var(--off-black);
+    font-size: var(--font-p);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.frame {
+    font-family: "Inter", sans-serif;
+    font-size: var(--font-p);
+    background-color: var(--gray-black);
+    height: auto;
+    width: 384px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-block-end: 0.6rem;
+    font-family: "Inter", sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+.description {
+    color: var(--white);
+    margin-block-end: 1.5rem;
+    font-weight: 400;
+}
+.address {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    margin-block-end: 1.5rem;
+    font-weight: 600;
+
+}
+.social-media {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+}
+.social-media a {
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--gray);
+    width: 300px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.social-media a:not(:last-child) {
+    margin-block-end: 0.8rem;
+}
+.social-media a:hover {
+    color: var(--off-black);
+    background-color: var(--primary);
+    transition: all 0.3s;
+}
